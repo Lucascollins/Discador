@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/b2949015ea.js" crossorigin="anonymous"></script>
+    <title>Discador</title>
+</head>
+<body>
+    <form action="" methd="get" id="form">
+        <h1>WPP SENDER</h1>
+        <input type="number" name="DD" id="numberinput" placeholder="Digite um número" maxlength="11" autocomplete="off"
+        oninput="if(this.value.length > this.maxLength) this.value=this.value.slice(0,this.maxLength)"
+        maxlength="16">
+        <textarea placeholder="Digite sua Mensagem" id="textinput"></textarea>
+        <div class="bttns">
+            <button disabled type="submit" id="bttn-link" aria-selected="false"><i class="fa-solid fa-copy fa-beat-fade" style="color: #00ff9d;"></i> COPIAR LINK</button>
+            <button disabled type="submit" id="bttn-message" aria-selected="false"><i class="fa-brands fa-whatsapp fa-beat-fade" style="color: #00ff9d;"></i> ENVIAR MENSAGEM</button>
+        </div>
+        
+    </form>
+</body>
+</html>
